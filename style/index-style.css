@@ -1,0 +1,257 @@
+html{
+    scroll-behavior: smooth;
+}
+body{
+    margin: 0px;
+    position: relative;
+}
+body p{
+    font-family: 'Sulphur Point', sans-serif;
+    margin: 10px 0px;
+}
+body h1 {
+    font-family: 'Viga', sans-serif;
+    word-spacing: 10px;
+    margin: 20px 0px;
+}
+.home{
+    padding: 10px;
+    height: auto ;
+}
+.background{
+    background-image: url("/background.jpg");
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 2500px;
+    z-index: -1;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.background .color_ops{
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    opacity: .5;
+    background: #1C1D21;
+}
+
+.up-icon{
+    background-color: cyan;
+    position: fixed;
+    bottom: 16px;
+    right: 10px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    color: white;
+    text-decoration: none;
+    opacity: 0;
+    pointer-events: none;
+    transition: all .5s;
+}
+.up-icon.active{
+    bottom: 15px;
+    pointer-events: auto;
+    opacity: 1;
+}
+.home .text {
+    padding: 10px;
+    width: 500px;
+    height: auto;
+    margin-left: 450px;
+    margin-top: 80px;
+    margin-bottom: 28px;
+    color: white;
+    font-size: 23px;
+    line-height: 40px;
+    text-transform: capitalize;
+    text-align: center;
+    /* animation  */
+    animation-name: slide;
+    animation-duration: 2s;
+    position: relative;
+}
+@keyframes slide{
+    0%{
+        opacity: 0; top: -1000px;
+    }
+    100%{
+        opacity: 1; top: 0;
+    }
+}
+.but_start {
+    padding: 9px 35px;
+    background-color: cyan;
+    color: white;
+    font-size: 18px;
+    border: solid 2px cyan;
+    border-radius: 10px;
+}
+.but_start:hover{
+    cursor: pointer;
+    background-color: white;
+    border: solid 2px white;
+    color: cyan;
+}
+.but_start:focus{
+    outline: none;
+}
+.about-as{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 30px;
+    background-color: white;
+    padding: 10px;
+    height: auto ;
+    margin-bottom: 50px;  
+}
+.photo-about-as{
+    float: left;
+    width: auto;
+    height: 400px;
+    margin-top: 80px;
+}
+.about-as .text {
+    width: 500px;
+    height: auto;
+    margin-left: 50px;
+    margin-top: 80px;
+    color: black;
+    font-size: 23px;
+    line-height: 40px;
+    float: right;
+}
+.div_devices_photo{
+    display: grid;
+    grid-template-columns: 1fr ;
+    grid-gap: 50px;
+    padding: 20px 50px 20px 50px;
+    height: auto ; 
+    margin: 0px 50px 50px 50px ;
+    position: relative; 
+    box-shadow: 0px 25px 25px rgb(189, 189, 189);
+
+}
+.div_ditels_device{
+display: grid;
+grid-gap: 20px;
+grid-template-columns: repeat(2 , 1fr);
+padding: 0 20px ;
+
+}
+.div_ditels_device .section-desc {
+    color: black;
+    text-align: center;
+    height: 300px;
+    font-size: 25px;
+}
+.title-section{
+    text-align: center;
+}
+.device_photo{
+    width: 600px;
+}
+.more_link{
+    width: 150px;
+    position: absolute;
+    text-align: right;
+    right: 6%;
+    bottom: 5%;
+    text-decoration: none;
+}
+.more_link span{
+    position: absolute;
+    width: 100px;
+    right: 40px;
+    font-size: 20px;
+    color: black;
+    padding-top: 3px;
+}
+.more_photo{
+    width: 30px; 
+    height: auto;
+    transition: 0.3s;
+}
+.contact{
+    background-color: white;
+    padding: 10px;
+    height: auto;
+    text-align: center;
+    color: black;
+    font-size: 22px;
+}
+.contact h1{
+    margin-bottom: 7px;
+}
+hr{
+    margin-top: 0px;
+    width: 150px;
+    border: cyan solid 2px;
+}
+.inp_contact{
+    padding-left: 20px;
+    margin: 10px;
+    width: 500px;
+    height: 40px;
+    border: 1px solid gray;
+    border-radius: 20px;
+}
+.inp_contact:focus{
+    outline: none;
+    color: cyan;
+    border-color: cyan;
+}
+textarea{
+    padding-top: 10px;
+    padding-left: 20px;
+    margin: 10px;
+    width: 500px;
+    border: 1px solid gray;
+    border-radius: 20px;
+}
+textarea:focus{
+    outline: none;
+    color: cyan;
+    border-color: cyan;
+}
+.but_send{
+    padding: 9px 35px;
+    background-color: cyan;
+    color: white;
+    font-size: 18px;
+    border: solid 2px cyan;
+    border-radius: 50px;
+    margin-bottom: 10px;
+}
+.but_send:hover{
+    background-color: white;
+    border: solid 2px cyan;
+    color: cyan;
+}
+.but_send:focus{
+    outline: none;
+}
+footer{
+    width: auto;
+    height: 100px;
+    background-color: rgb(37, 36, 36);
+    text-align: center;
+    padding: 20px;
+    color: gray;
+}
+.Social {
+    padding: 20px;
+    font-size: 20px;
+    width: 30px;
+    text-decoration: none;
+    color: grey;
+  }
